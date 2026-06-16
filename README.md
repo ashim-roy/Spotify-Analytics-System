@@ -1,6 +1,10 @@
-# Streamify
+# Spotify Analytics System
 
-A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GCP and much more!
+Real-time music analytics platform inspired by large-scale streaming systems such as Spotify.
+
+Processes music streaming events using Kafka, Spark Streaming, ETL pipelines, and distributed processing technologies to generate analytics on top songs, albums, user activity, and listening trends.
+
+> Currently evolving from the original Streamify architecture toward a Java, Spring Boot, Kafka, PostgreSQL, Redis, and AWS-based platform.
 
 ## Description
 
@@ -34,6 +38,30 @@ Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.c
 ### Final Result
 
 ![dashboard](images/dashboard.png)
+
+
+## Project Roadmap
+
+### Phase 1 (Current)
+- Study and understand the existing Streamify architecture
+- Setup Kafka, Spark Streaming, Airflow, and analytics pipeline
+- Document architecture and data flow
+
+### Phase 2
+- Replace Python ingestion services with Java + Spring Boot
+- Build REST APIs for analytics consumption
+- Introduce PostgreSQL for analytics storage
+
+### Phase 3
+- Add Redis caching layer
+- Deploy services using Docker
+- Migrate infrastructure to AWS
+
+### Phase 4
+- Build real-time analytics dashboard
+- Add monitoring, observability, and CI/CD
+
+
 ## Setup
 
 **WARNING: You will be charged for all the infra setup. You can avail 300$ in credit by creating a new account on GCP.**
